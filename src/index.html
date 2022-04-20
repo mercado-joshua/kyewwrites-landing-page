@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kyew.writes</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+    <div class="max-wrapper">
+        <header class="header-section">
+            <wired-card elevation="2" class="headerbox">
+                <h1 class="title">kyew.writes</h1>
+            </wired-card>
+
+            <div class="bannerbox">
+                <div class="contentbox">
+                    <h2 class="title">Hire a writer for 200</h2>
+                    <div class="descriptionbox">
+                        <p class="description">need something to say but can't find the right words?</p>
+                        <p class="description">Say no more ;)</p>
+                    </div>
+                </div>
+
+                <div class="imagebox">
+                    <wired-image elevation="2" src="images/the.svg"></wired-image>
+                </div>
+            </div>
+        </header>
+
+        <wired-card elevation="2" class="portfolio-section">
+            <h2 class="title">Sample Works</h2>
+
+            <div class="linkbox">
+                <wired-link elevation="3" href="https://bit.ly/kyewwrites" target="_blank">https://bit.ly/kyewwrites</wired-link>
+            </div>
+        </wired-card>
+
+        <section class="services-section">
+            <wired-card elevation="2" class="contentbox">
+                <div class="servicesbox">
+                    <h2 class="title">Services</h2>
+                    <p class="description">If you need assitance in writing <span class="bold">essays, case studies, articles, poetries, proses, and even screenplays,</span> then please consider hiring me!</p>
+                </div>
+
+                <div class="ratebox">
+                    <h2 class="title">Student-friendly Rates</h2>
+                    
+                    <ul class="rates">
+                        <li class="item">Poetry & prose: Php 200</li>
+                        <li class="item">Essays: Php 200-300</li>
+                        <li class="item">Articles: Php 1 per word</li>
+                        <li class="item">Case studies: Php 1 per word</li>
+                        <li class="item">Screenplays: Php 500 **</li>
+                    </ul>
+
+                    <p class="description">** depending on length, details, and difficulty</p>
+                </div>
+            </wired-card>
+
+            <div class="imagebox">
+                <wired-image elevation="2" src="images/sample-1.png"></wired-image>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="contentbox">
+                <wired-card elevation="2" class="offerbox">
+                    <h2 class="title">Especially for you</h2>
+                    <p class="description">You may receive your commisioned work within <span class="bold">1 - 3 days</span>.</p>
+                    <p class="description">we can coordinate any form of revisions because I <span class="bold">guarantee quality and sensible outputs</span>.</p>
+
+                    <p class="description">Mode of payment: BDO / Gcash</p>
+                </wired-card>
+
+                <wired-card elevation="2" class="aboutbox">
+                    <h2 class="title">About me</h2>
+                    
+                    <p class="description">I am a <span class="bold">graduating BS Psychology</span> student from <span class="bold">UST</span>. Writing has long been my passion and my way of expression; finding the right words has always been the easiest way for me to express my thoughts, opinions, and emotions.</p>
+                </wired-card>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script type="module" src="https://unpkg.com/wired-elements?module"></script>
+    <script type="module">
+        const name = document.querySelector("wired-input");
+        const button = document.querySelector("wired-button");
+        button.addEventListener("click", () => {
+            window.alert(`Hello ${name.value.trim()}!`);
+        });
+    </script>
+</body>
+</html>

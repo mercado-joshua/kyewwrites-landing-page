@@ -1,0 +1,33 @@
+@use '../utils/breakpoints';
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 2rem;
+
+    > .contentbox {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        > .offerbox,
+        > .aboutbox { 
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;  
+
+            > .title {
+                font-weight: bold;
+                text-decoration: underline;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @include breakpoints.media-breakpoint-up(768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    } 
+}
